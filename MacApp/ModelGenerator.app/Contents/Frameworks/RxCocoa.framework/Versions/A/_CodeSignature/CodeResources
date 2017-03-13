@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		9pRwoGlu1Yz0S0bo7G6pY4tmenE=
+		QLSvqHTxwsUllHQ9q0mhloKYUVs=
 		</data>
 		<key>Resources/SharedSequence+Operators+arity.tt</key>
 		<data>
@@ -19,11 +19,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2FOLcZHeyku/j/jNry4owl2KrSk=
+			HTWcsze/zoPkWE3tV/7NOD9C4DU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Im7Gn+H/QLbUjy8E1AwGFFXcNg8f/i+FIVAzAyXEa5k=
+			J6DIjIb+zvVI5mdtOv697hErsho+YASiFT4zqEv7bMc=
 			</data>
 		</dict>
 		<key>Headers/RxCocoa.h</key>
@@ -85,22 +85,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vno3ILP5z1eTPpQ2/wll6AoSrqw=
+			0Ps2Z4V8HZxyVJQ7/2sgHIE+3ZA=
 			</data>
 			<key>hash2</key>
 			<data>
-			ier234dPQQpNWo4NVtxx6jo62a15iP+4JqrqcZ1Q/l8=
+			KLktzqDVsAxjF33GDDVQsD12wBADeKZdgT6ntG1Ivr8=
 			</data>
 		</dict>
 		<key>Modules/RxCocoa.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sJAKD5Lsg+BRtVcns86VRJDHfeM=
+			MyEYy3nNBSeQZ6nqd89fgzNpucc=
 			</data>
 			<key>hash2</key>
 			<data>
-			xMM/lBP9KFHFhp+Cv5RZPRpqAwSO35rJPTvuyXEzJiI=
+			gwgyhRMyOu7tqxDkLLWUu2+3snFm9W6iXLJe22cxqz8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -118,11 +118,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9pRwoGlu1Yz0S0bo7G6pY4tmenE=
+			QLSvqHTxwsUllHQ9q0mhloKYUVs=
 			</data>
 			<key>hash2</key>
 			<data>
-			qhMS8+/S3E4Oyq7IwGf9hdKJnUGLEhbdq+o1UePEGGg=
+			sYvWfg3sxWcV1CgzIWZMk1aniaoblLuXE2RY2J5Qn5A=
 			</data>
 		</dict>
 		<key>Resources/SharedSequence+Operators+arity.tt</key>
@@ -154,6 +154,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
@@ -213,6 +218,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^[^/]+$</key>
 		<dict>

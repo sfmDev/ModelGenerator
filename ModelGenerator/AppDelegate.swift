@@ -15,6 +15,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.closeWindow), name: NSNotification.Name.NSWindowWillClose, object: nil)
+    }
+
+    func closeWindow() {
+        NSApplication.shared().terminate(self)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

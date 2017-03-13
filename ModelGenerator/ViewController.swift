@@ -60,10 +60,11 @@ private extension ViewController {
 
         var result = ""
         var nestedModel = ""
-        let initFunc = "\(indentation)init?(_ map: Map) {}"
-        var modelDefine = "struct \(model) {\n"
-        var modelExtension = "extension \(model): Mappable {\n"
-        modelExtension += "\(indentation)mutating func mapping(map: Map) {\n"
+
+        let initFunc = "\(indentation)init?(map: Map) {\n \(indentation)\(indentation)if shouldReturnNil(map) {\n \(indentation)\(indentation)\(indentation)return nil\n \(indentation)\(indentation)}\n\(indentation)}"
+        let nonnil = "\(indentation)var nonnilMapProperties: [String] {\n \(indentation)\(indentation)return []\n \(indentation)}"
+        var modelDefine = "struct \(model): APIModelConvertible, NonnilMappable {\n"
+        var modelExtension = "\(indentation)mutating func mapping(map: Map) {\n"
 
         dict.forEach {
             let variableName = normalizeVariableName(key: $0.key)
@@ -120,9 +121,10 @@ private extension ViewController {
             modelExtension += "\(indentation)\(indentation)\(variableName) <- map[\"\($0.key)\"]\n"
         }
 
-        modelDefine += "\n\(initFunc)\n}"
+        modelDefine += "\n\(initFunc)\n"
+        modelDefine += "\n\(nonnil)\n"
         modelExtension += "\(indentation)}\n}"
-        result += "\(modelDefine)\n\n\(modelExtension)\(nestedModel)"
+        result += "\(modelDefine)\n\(modelExtension)\(nestedModel)"
         return result
     }
 
